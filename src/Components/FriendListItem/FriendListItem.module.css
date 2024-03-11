@@ -1,26 +1,26 @@
-.friend-list-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    overflow: hidden;
-    padding: 10px;
+.friend {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 10px;
 }
 
-.friend-list-item img {
-    margin-right: 10px;
-    border-radius: 50%;
+.friend img {
+  margin-right: 10px;
+  border-radius: 50%;
 }
 
-.friend-list-item p {
-    margin: 0;
+.friend p {
+  margin: 0;
 }
 
-.friend-online {
-    color: green;
+.online {
+  color: green;
 }
 
-.friend-offline {
-    color: red;
+.offline {
+  color: red;
 }
