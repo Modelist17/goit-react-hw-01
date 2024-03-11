@@ -1,11 +1,12 @@
-// src/components/TransactionHistory/TransactionHistory.jsx
-
 import React from 'react';
-import styles from './TransactionHistory.module.css'; 
+import css from './TransactionHistory.module.css';
+import clsx from 'clsx';
 
 const TransactionHistory = ({ items }) => {
+  const classes = [css.table];
+
   return (
-    <table className={styles.transactionHistory}>
+    <table className={clsx(...classes)}>
       <thead>
         <tr>
           <th>Type</th>
@@ -13,13 +14,12 @@ const TransactionHistory = ({ items }) => {
           <th>Currency</th>
         </tr>
       </thead>
-
       <tbody>
-        {items.map((transaction) => (
-          <tr key={transaction.id}>
-            <td>{transaction.type}</td>
-            <td>{transaction.amount}</td>
-            <td>{transaction.currency}</td>
+        {items.map(({ id, type, amount, currency }) => (
+          <tr key={id}>
+            <td>{type}</td>
+            <td>{amount}</td>
+            <td>{currency}</td>
           </tr>
         ))}
       </tbody>

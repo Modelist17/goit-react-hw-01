@@ -1,40 +1,101 @@
+/* src/components/Profile/Profile.module.css */
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profileWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profileImage {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  background-color: #000;
+  border: 3px solid rgb(35, 37, 35);
+  margin-bottom: 10px;
+}
+
+.profileAcent {
+  font-weight: 700;
+}
+
+.profileLigth {
+  color: #585353;
+}
+
+.profileList {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.profileListItem {
+  display: flex;
+  flex-direction: column;
+  border-left: 3px solid rgb(88, 83, 83);
+  border-top: 3px solid rgb(88, 83, 83);
+  background-color: #b8aeae;
+  color: #000;
+  width: calc(100% / 3);
+  padding: 10px;
+}
+
+.profileListItem:first-child {
+  border-left: none;
+}
+
+/* New styles added based on your provided CSS */
+
 .profile-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .profile-container img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    object-fit: cover;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .profile-info {
-    text-align: center;
+  text-align: center;
 }
 
 .profile-info p {
-    margin: 5px 0;
+  margin: 5px 0;
 }
 
 .stats-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .stats-list li {
-    display: flex;
-    justify-content: space-between;
-    margin: 5px 0;
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
 }
 
 .stats-list li span {
-    font-weight: bold;
+  font-weight: bold;
 }

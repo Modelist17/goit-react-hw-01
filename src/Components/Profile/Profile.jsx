@@ -1,32 +1,31 @@
-// src/components/Profile/Profile.jsx
-
 import React from 'react';
-import styles from './Profile.module.css'; 
+import css from './Profile.module.css';
+import clsx from 'clsx';
 
 const Profile = ({ name, tag, location, image, stats }) => {
-  const { followers, views, likes } = stats;
+  const classes = [css.profile];
 
   return (
-    <div className={styles.profile}>
-      <div>
-        <img src={image} alt="User avatar" />
-        <p>{name}</p>
-        <p>@{tag}</p>
-        <p>{location}</p>
+    <div className={clsx(...classes)}>
+      <div className={css.profileWrap}>
+        <img className={css.profileImage} src={image} alt="User avatar" />
+        <p className={css.profileAcent}>{name}</p>
+        <p className={css.profileLigth}>@{tag}</p>
+        <p className={css.profileLigth}>{location}</p>
       </div>
 
-      <ul>
-        <li>
-          <span>Followers</span>
-          <span>{followers}</span>
+      <ul className={css.profileList}>
+        <li className={css.profileListItem}>
+          <span className={css.profileStats}>Followers </span>
+          <span className={css.profileAcent}>{stats.followers}</span>
         </li>
-        <li>
-          <span>Views</span>
-          <span>{views}</span>
+        <li className={css.profileListItem}>
+          <span className={css.profileStats}>Views</span>
+          <span className={css.profileAcent}> {stats.views}</span>
         </li>
-        <li>
-          <span>Likes</span>
-          <span>{likes}</span>
+        <li className={css.profileListItem}>
+          <span className={css.profileStats}>Likes</span>
+          <span className={css.profileAcent}>{stats.likes}</span>
         </li>
       </ul>
     </div>
