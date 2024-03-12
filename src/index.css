@@ -44,7 +44,7 @@
   color: #888;
 }
 
-._profile_1tzbh_1 {
+/* ._profile_iuzl2_5 {
   font-weight: 500;
   line-height: 2;
   text-align: center;
@@ -55,25 +55,25 @@
   border-radius: 2%;
   border: 3px solid rgb(88, 83, 83);
   color: #000;
-}
+} */
 
-._profileWrap_1tzbh_17 {
+/* ._profileWrap_iuzl2_31 {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
+} */
 
-._profileAcent_1tzbh_24 {
+._profileAcent_iuzl2_63 {
   font-weight: 700;
 }
 
-._profileList_1tzbh_28 {
+/* ._profileList_5rrnx_79 {
   display: flex;
   align-items: center;
-}
+} */
 
-._profileListItem_1tzbh_33 {
+/* ._profileListItem_5rrnx_95 {
   display: flex;
   flex-direction: column;
   border-left: 3px solid rgb(88, 83, 83);
@@ -82,60 +82,60 @@
   color: #000;
   width: calc(100% / 3);
   padding: 10px;
-}
+} */
 
-._profileListItem_1tzbh_33:first-child {
+._profileListItem_5rrnx_95:first-child {
   border-left: none;
 }
 
-._profileLigth_1tzbh_48 {
+/* ._profileLigth_iuzl2_71 {
   color: #585353;
-}
+} */
 
-._profileImage_1tzbh_51 {
+/* ._profileImage_5rrnx_43 {
   border-radius: 250px;
   background-color: #000;
   border: 3px solid rgb(35, 37, 35);
   width: 150px;
   margin-bottom: 10px;
-}
+} */
 
-._friendList_j9zw3_1 {
+/* ._friendList_1cxlp_1 {
   display: flex;
   margin-top: 30px;
   gap: 15px;
   font-weight: 500;
   line-height: 2;
   font-size: 1.5em;
-}
+} */
 
-._friendListCard_j9zw3_9 {
+/* ._friendListCard_1cxlp_19 {
   width: 20%;
   padding-top: 15px;
   border: 1px solid rgb(88, 83, 83);
   border-radius: 4%;
   background-color: #efeff3cc;
-}
+} */
 
-._friendListText_j9zw3_17 {
+/* ._friendListText_1cxlp_35 {
   color: #000;
-}
+} */
 
-._ofline_j9zw3_20 {
+/* ._ofline_1cxlp_51 {
   color: red;
-}
+} */
 
-._online_j9zw3_24 {
+/* ._online_1cxlp_43 {
   color: green;
-}
+} */
 
-._table_vzimm_1 {
+/* ._table_1nfp4_1 {
   width: 100%;
   border-collapse: collapse;
   border: 1px solid black;
   margin-top: 20px;
   box-shadow: 0 4px 8px #0000001a;
-}
+} */
 
 thead th {
   background-color: #e5e9eb;

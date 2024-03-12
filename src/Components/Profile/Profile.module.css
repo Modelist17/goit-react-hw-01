@@ -21,8 +21,8 @@
 
 .profileImage {
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   object-fit: cover;
   background-color: #000;
   border: 3px solid rgb(35, 37, 35);
