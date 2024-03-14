@@ -1,6 +1,6 @@
-import React from 'react';
-import css from './FriendList.module.css';
-import clsx from 'clsx';
+import React from "react";
+import css from "./FriendList.module.css";
+import clsx from "clsx";
 
 const FriendList = ({ friends }) => {
   const classes = [css.friendList];
@@ -11,7 +11,12 @@ const FriendList = ({ friends }) => {
         const isFriendOnline = isOnline === true;
 
         return (
-          <li className={clsx(css.friendListCard, { [css.online]: isFriendOnline })} key={id}>
+          <li
+            className={clsx(css.friendListCard, {
+              [css.online]: isFriendOnline,
+            })}
+            key={id}
+          >
             <div>
               <img src={avatar} alt="Avatar" width="48" />
               <p className={css.friendListText}>{name}</p>
